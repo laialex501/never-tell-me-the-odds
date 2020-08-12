@@ -1,0 +1,23 @@
+{
+  "name": "never-tell-me-the-odds",
+  "version": "1.0.0",
+  "description": "A application for empirically estimating the probability of dice rolls for the Star Wars Fantasy Flight RPG game",
+  "main": "index.js",
+  "dependencies": {
+    "jquery": "^3.5.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laialex501/never-tell-me-the-odds.git"
+  },
+  "author": "Alex Lai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/laialex501/never-tell-me-the-odds/issues"
+  },
+  "homepage": "https://github.com/laialex501/never-tell-me-the-odds#readme"
+}
