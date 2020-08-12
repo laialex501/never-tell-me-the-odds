@@ -1,6 +1,3 @@
-# Ignore node_modules
-node_modules
-
 # Ignore virtual environment
 env
 
