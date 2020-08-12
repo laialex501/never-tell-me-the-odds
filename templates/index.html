@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+    <title>Never Tell Me the Odds!</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+   <h1>Never Tell Me the Odds!</h1>
+   <form class="container" action="{{ url_for('estimate_prob') }}" method="post" id="params">
+    <label for="ability">Ability Dice</label>
+    <input type="number" id="a" name="ability" value="0">
+
+    <label for="proficiency">Proficiency Dice</label>
+    <input type="number" id="p" name="proficiency" value="0">
+
+    <label for="difficulty">Difficulty Dice</label>
+    <input type="number" id="d" name="difficulty" value="0">
+
+    <label for="challenge">Challenge Dice</label>
+    <input type="number" id="c" name="challenge" value="0">
+
+    <label for="boost">Boost Dice</label>
+    <input type="number" id=b name="boost" value="0">
+
+    <label for="setback">Setback Dice</label>
+    <input type="number" id=s name="setback" value="0">
+
+    <label for="query">Find Probability of...</label>
+    <select id="q" name="query">
+        <option value="success">Success</option>
+        <option value="advantage">Advantage</option>
+        <option value="failure">Failure</option>
+        <option value="threat">Threat</option>
+        <option value="success-advantage">Success and Advantage</option>
+        <option value="success-threat">Success and Threat</option>
+        <option value="failure-advantage">Failure and Advantage</option>
+        <option value="failure-threat">Failure and Threat</option>
+   </select>
+    <input type="submit" value="Estimate Probability">
+
+    <div class="output" id="output">
+    </div>
+   </form>
+</body>
+<script src="static/js/app.js"></script>
+</html>
